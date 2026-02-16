@@ -1,0 +1,14 @@
+{
+  "name": "Junior Chicken Company",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client/*",
+    "server/*"
+  ],
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "npm install --prefix client && npm start --prefix client",
+    "server": "npm install --prefix server && npm start --prefix server"
+  }
+}
